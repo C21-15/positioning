@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Моя сторінка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .header {
+            background-color: rgb(189, 112, 68);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(206, 158, 116);
+        }
+
+        .nav li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box-static {
+            position: static;
+            width: 20%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-color: chocolate;
+            padding: 20px;
+        }
+
+        .box-relative {
+            position: relative;
+            top: 20px;
+            left: 5px;
+            width: 100px;
+            height: 100px;
+            background-color: blanchedalmond;
+            color: black;
+        }
+
+        .box-absolute {
+            position: absolute;
+            background-color: rgb(156, 111, 45);
+            width: 60%; /* Adjust the width for readability */
+            top: 77%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            padding: 20px; /
+        }
+
+        .box-fixed {
+            position: fixed;
+            width: 20%;
+            background-color: rgb(230, 107, 76)
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Кав'ярня</h1>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section class="box-static">
+            <h1>Про нас:</h1>
+            <p>Наша кав'ярня колдує найкращу каву на київсьому ринку. Шмурдяк, то не про нас. Ми готуємо її з чистої <b>бразильської арабіки</b>. </p>
+        </section>
+        <section class="box-relative">
+            <p> Контакти:
+                +380961234567
+                +380631234567
+                Telegram
+                Instagram
+            </p>
+        </section>
+        <section class="box-absolute">
+            <h1>Меню</h1>
+            <h2>Кава</h2>
+            <p> 
+                - Еспресо: $2.50<br>
+                - Латте: $3.50<br>
+                - Капучино: $3.00<br>
+                - Американо: $2.80<br>
+                - Мокко: $4.00<br>
+            </p>
+            <h2>Чай</h2>
+            <p> 
+                - Зелений чай: $2.00<br>
+                - Чорний чай: $2.00<br>
+                - Трав'яний чай: $2.50<br>
+            </p>
+            <h2>Солодощі</h2>
+            <p> 
+                - Торт "Бідний Єврей": $4.50<br>
+                - Брауні: $3.00<br>
+                - Морозиво: $2.50<br>
+            </p>
+            <p><b>Юра</b> - це той чарівний колдун кави, який знає та любить свою справу. Він є нашим головним баристою та серцем нашої кав'ярні.</p>
+<p>Юра має багаторічний досвід у світі кави та завжди прагне до ідеалу у кожному напої, який він готує.</p>
+<p>Його біографія включає в себе навчання в провідних кавових школах світу, а також участь у багатьох кавових конкурсах та фестивалях. Юра завжди допоможе вам обрати ідеальний напій, підкаже про приготування та ділиться цікавими історіями про каву з усіх куточків світу.</p>
+<p>Завітайте до нашої кав'ярні, де Юра розірве ваші рецептори!</p>
+        </section>
+        <section class="box-fixed">
+            <p>Achtung!!! 
+             14.10 відбудеться майстер клас з приготуування кави 
+             Вхід вільний! Ми раді будь кому!
+            </p>
+        </section>
+    </div>
+</body>
+</html>
